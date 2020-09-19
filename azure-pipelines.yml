@@ -1,1 +1,13 @@
+trigger:
+- master
 
+pool:
+  vmImage: 'macOS-latest'
+
+steps:
+- script: |
+    echo hello from macOS
+    mkdir /opt/fortify-sca/
+    curl https://blobstorageromell.blob.core.windows.net/container1/fortify-mac.zip --output /tmp/romell-test/fortify.zip
+    ls -la /opt/fortify-sca/
+  displayName: 'installing fortify'
