@@ -13,5 +13,6 @@ steps:
     unzip fortify-mac.zip
     rm -f fortify-mac.zip
     chmod -R 777 /tmp/fortify-sca/*
-    Fortify_SCA_and_Apps_20.1.2_osx_x64.app/Contents/MacOS/installbuilder.sh --mode unattended --optionfile Fortify_SCA_and_Apps_20.1.2_osx_x64.app.options
+    # Fortify_SCA_and_Apps_20.1.2_osx_x64.app/Contents/MacOS/installbuilder.sh --mode unattended --optionfile Fortify_SCA_and_Apps_20.1.2_osx_x64.app.options
+    Fortify_SCA_and_Apps_20.1.2_osx_x64.app/Contents/MacOS/installbuilder.sh --mode unattended
   displayName: 'Installing Fortify'
