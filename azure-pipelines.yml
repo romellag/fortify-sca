@@ -17,5 +17,5 @@ steps:
   displayName: 'Installing Fortify'
 
 - script: |
-    /tmp/fortify-sca/sourceanalyzer
+    /tmp/fortify-sca/bin/sourceanalyzer
   displayName: 'Check Installation'
