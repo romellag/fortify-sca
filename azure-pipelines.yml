@@ -8,8 +8,10 @@ steps:
 - script: |
     echo hello from macOS
     mkdir /tmp/fortify-sca/
-    curl https://blobstorageromell.blob.core.windows.net/container1/fortify-mac.zip --output /tmp/fortify-sca/fortify.zip
     cd /tmp/fortify-sca/
-    unzip fortify.zip
-    ls -la *
+    curl https://blobstorageromell.blob.core.windows.net/container1/fortify-mac.zip
+    unzip fortify-mac.zip
+    rm fortify-mac.zip
+    ls -la /tmp/fortify-sca/*
+    cd Fortify_SCA_and_Apps_20.1.2_osx_x64.app
   displayName: 'Installing Fortify'
