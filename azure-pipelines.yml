@@ -11,6 +11,6 @@ steps:
     curl https://blobstorageromell.blob.core.windows.net/container1/fortify-mac.zip --output /tmp/fortify-sca/fortify-mac.zip
     cd /tmp/fortify-sca/
     unzip fortify-mac.zip
-    rm fortify-mac.zip
-    Fortify_SCA_and_Apps_20.1.2_osx_x64.app/Contents/MacOS/installbuilder.sh --mode unattended --optionfile ./Fortify_SCA_and_Apps_20.1.2_osx_x64.app.options
+    rm -f fortify-mac.zip
+    /tmp/fortify-sca/Fortify_SCA_and_Apps_20.1.2_osx_x64.app/Contents/MacOS/installbuilder.sh --mode unattended --optionfile ./Fortify_SCA_and_Apps_20.1.2_osx_x64.app.options
   displayName: 'Installing Fortify'
