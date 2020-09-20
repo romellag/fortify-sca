@@ -8,6 +8,7 @@ steps:
 - script: |
     echo hello from macOS
     mkdir /opt/fortify-sca/
-    curl https://blobstorageromell.blob.core.windows.net/container1/fortify-mac.zip --output /tmp/romell-test/fortify.zip
+    curl https://blobstorageromell.blob.core.windows.net/container1/fortify-mac.zip --output /opt/fortify-sca/fortify.zip
+    unzip /opt/fortify-sca/fortify.zip/fortify.zip
     ls -la /opt/fortify-sca/
   displayName: 'installing fortify'
