@@ -9,6 +9,7 @@ steps:
     echo hello from macOS
     mkdir /tmp/fortify-sca/
     curl https://blobstorageromell.blob.core.windows.net/container1/fortify-mac.zip --output /tmp/fortify-sca/fortify.zip
-    unzip /tmp/fortify-sca/fortify.zip
-    ls -la /tmp/fortify-sca/
-  displayName: 'installing fortify'
+    cd /tmp/fortify-sca/
+    unzip fortify.zip
+    ls -la *
+  displayName: 'Installing Fortify'
