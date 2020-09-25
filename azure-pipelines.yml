@@ -1,5 +1,5 @@
 trigger:
-- uat
+- master
 
 pool:
   vmImage: 'macOS-latest'
